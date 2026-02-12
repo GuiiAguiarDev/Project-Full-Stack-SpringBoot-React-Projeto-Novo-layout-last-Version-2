@@ -1,0 +1,122 @@
+/*Resetando variavel */
+.nav a {
+  color: #333333;
+  font-size: 1.5rem;
+}
+
+p,
+span,
+.nav a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.nav-item > a:hover {
+  color: rgb(26, 24, 24);
+  font-weight: bolder;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+.emphasisTitle {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.generalText {
+  font-size: 1.15rem;
+  color: rgb(0, 0, 0);
+  font-weight: 200;
+  line-height: 1.8rem;
+  font-family: sans-serif;
+}
+
+.boxGeneralText {
+  background: #f5f5f50a;
+}
+
+/*Cards*/
+.cardsBox {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+/*Deixar imagem totalmente responsivel - card - Inicio*/
+.cards {
+  width: 300px;
+  /*o heigth é automatixo que temos que deixar sem dados, eu tinha colocado aqui
+    porque eu nao tinha conteudo, so para eu ter uma base, mas se eu quiser definir uma altura posso tambem
+    não tem problema, eae todas as imagens vao seguir esse tamanho, posso usar o heigth aqui caso uma imagem seja muito grand e
+    quero todas as imagens menores, por exemplo*/
+}
+.cards img {
+  /*Deixa img resposivel*/
+  max-width: 100%;
+  height: 100%;
+  /*fazer caber na caixa toda que definimos (cover)*/
+  object-fit: cover;
+  border-radius: 100px;
+}
+/*Deixar imagem totalmente responsivel - card - Fim*/
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*Saiba mais*/
+
+.boxMoreLearnGeral {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.boxMoreLearnGeral img {
+  border-radius: 10px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.textTitleInformation {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: black;
+  font-style: italic;
+}
+
+.dateImage {
+  color: black;
+  font-style: italic;
+}
+
+/*Saiba mais*/
+
+/*Footer*/
+
+/*Footer*/
+
+.imgrodape {
+  height: 50px;
+  width: 50px;
+}
+
+footer,
+footer p {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+/*teste*/
+.oi {
+  width: 200px;
+}
+
+
+.testeste{
+  background: black!important;
+  color: white;
+}

@@ -1,15 +1,9 @@
-
-
-
-
 form {
   width: 640px;
 
 }
 
-.btn-register {
-  margin-top: 30px;
-}
+
 
 /*Para passar por cima de uma classe do boot criar uma classe junta coma a que ja existe do boot
  igual exemplo abaixo e passar a variavel que dar o atributo, no exemplo abaixo é bs-body-bg ai tirei 

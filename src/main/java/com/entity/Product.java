@@ -11,6 +11,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.DecimalMin;
 
 @Entity
 @Table(name = "TB_PRODUCT")
@@ -24,8 +25,9 @@ public class Product {
 	private String name;
 	@Column(name = "ESTOQUE")
 	private int estoque;
+	
 	@Column(name = "PRICE")
-	private double price;
+	private Double price;
 
 
 
@@ -33,7 +35,7 @@ public class Product {
 		super();
 	}
 
-	public Product(Long id, String name, int estoque, double price) {
+	public Product(Long id, String name, int estoque, Double price) {
 
 		this.id = id;
 		this.name = name;
@@ -66,11 +68,11 @@ public class Product {
 		this.estoque = estoque;
 	}
 
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 

@@ -55,19 +55,19 @@ const ProductForm = ({ onAdd }) => {
          <h2 className="emphasisTitle text-center mt-4">Register Product</h2>
   
       <form className="col-12 row mt-2 px-4 formRegisterProduct" onSubmit={handleSubmit}>
-        <div className="col-sm-3 col-md-2 me-2">
+        <div className="col-sm-3 col-md-2 me-2 ">
           <label htmlFor="inputEmail4" className="form-label generalText fw-bold ">
             Name
           </label>
           <input type="text" placeholder="Name" className="form-control" id="inputEmail4" value={name} onChange={(e) => setName(e.target.value)} required />
         </div>
-        <div className="col-sm-3 col-md-2  me-2">
-          <label htmlFor="inputPassword4" className="form-label generalText fw-bold mt-1">
+        <div className="col-sm-3 col-md-2  me-2 ">
+          <label htmlFor="inputPassword4" className="form-label generalText fw-bold">
             Stock
           </label>
           <input type="number" placeholder="1" className="form-control" id="inputPassword4" step="0.1" value={stock} onChange={(e) => setStock(parseInt(e.target.value))} required />
         </div>
-        <div className="col-sm-3 col-md-2  me-2 mt-1">
+        <div className="col-sm-3 col-md-2  me-2">
           <label htmlFor="inputAddress" className="form-label generalText fw-bold">
             Price
           </label>
@@ -99,7 +99,12 @@ const ProductForm = ({ onAdd }) => {
       <th scope="row" key={p.id}>{p.id}</th>
       <td>{p.name}</td>
       <td>{p.estoque}</td>
-      <td>${p.price.toFixed(2)}</td>
+      <td>{p.price.toLocaleString("en-US",{
+    style: "currency",
+    currency:"USD",   
+        
+})}
+</td>
     </tr>
        ))}
   </tbody>

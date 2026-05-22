@@ -28,11 +28,11 @@ public class InvoiceController {
 	// vou fazer
 	// um front para ele ou seja uma tela agora.
 	@PostMapping("/comprar")
-	public String comprar(@RequestParam String nameProduct, @RequestParam int qtdProductBuyed) {
+	public Invoice comprar(@RequestParam String nameProduct, @RequestParam int qtdProductBuyed) {
 		Invoice invoice = new Invoice();
 
-		invoiceService.addItem(nameProduct, qtdProductBuyed, invoice);
-		return invoice + "Comprar processada!";
+		return invoiceService.addItem(nameProduct, qtdProductBuyed, invoice);
+		
 	}
 
 }

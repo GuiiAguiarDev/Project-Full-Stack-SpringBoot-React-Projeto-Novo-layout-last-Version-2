@@ -56,11 +56,7 @@ const Home = () => {
             Comprar
           </Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link " href="fd">
-            Produtos
-          </a>
-        </li>
+        
       </ul>
 
       <div className="col-12">

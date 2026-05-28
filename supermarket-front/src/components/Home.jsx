@@ -111,14 +111,23 @@ const Home = () => {
         </div>
       </div>
       <footer className="col-12 d-flex justify-content-around">
-        <div className="col-8 border-top text-center text-sm-start d-sm-flex justify-content-around py-5 my-2">
-          <p>2025 Company, Inc</p>
+        <div className="col-8 border-top  text-center text-sm-start d-sm-flex justify-items-center justify-content-sm-around py-5 my-2">
+          <div className=" d-flex justify-content-center">
+          <small className=" d-flex align-items-center">2025 Company, Inc</small>
+          </div>
+          <div className="col-sm-4 text-center mt-2 mb-1 ">
           <img className="imgrodape" src={iconeFooter} alt="logo" />
-          <ul className="d-flex gap-5 list-unstyled">
+          </div>
+          <div className=" d-flex justify-content-center justify-content-sm-start justify-content-md-start ">
+          <ul className="d-flex list-unstyled gap-2 ">
             <li className="border-bottom">Home</li>
             <li className="border-bottom">Comprar</li>
             <li className="border-bottom">produtos</li>
+            
           </ul>
+        
+          </div>
+           
         </div>
       </footer>
     </div>

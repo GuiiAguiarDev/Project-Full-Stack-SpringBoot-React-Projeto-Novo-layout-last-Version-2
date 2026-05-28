@@ -1,0 +1,37 @@
+form {
+  width: 640px;
+
+}
+
+
+
+/*Para passar por cima de uma classe do boot criar uma classe junta coma a que ja existe do boot
+ igual exemplo abaixo e passar a variavel que dar o atributo, no exemplo abaixo é bs-body-bg ai tirei 
+ a cor com none*/
+.table.teste{
+  background-image: linear-gradient(to right, #ff91006e, #ff91009c); /* Orange to Tomato */
+  border-radius:15px;
+--bs-body-bg:none;
+border-bottom: solid rgba(0, 0, 0, 0.452) 2px;
+border-top: 8px solid rgb(0, 0, 0);
+}
+
+tr td{
+
+  font-weight: bolder;
+}
+
+.formRegisterProduct{
+
+   background-image: linear-gradient(to right, #ff91008c, #ff91008c); /* Orange to Tomato */
+
+
+}
+
+
+.kk{
+  max-width: 150px ;
+  border-bottom: solid rgb(0, 0, 0) 2px;
+  opacity: 1.0;
+}
+

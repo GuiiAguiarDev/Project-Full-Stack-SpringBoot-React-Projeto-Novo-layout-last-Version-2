@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import "./ProductForm.css";
+import "./Register.css";
 
 function Comprar({ onUpdate }) {
   const [nameProduct, setNameProduct] = useState("");
@@ -56,34 +56,43 @@ function Comprar({ onUpdate }) {
     
       {/*className="row" pra ficar em linha */}
       <h2 className="emphasisTitle text-center mt-4">Buy a Product</h2>
-      <div className="d-flex flex-column align-items-center align-items-md-start ">
-      <form className="col-12 col-sm-10 col-lg-8 row mt-2 px-4 formRegisterProduct" onSubmit={handleComprar}>
-        <div class="col-sm-12 col-md-4 me-2 ">
-          <label for="inputEmail4" class="form-label generalText fw-bold">
+     
+     <div className=" d-flex flex-column align-items-center ">
+      <form className="col-10 ">
+         <div className="col-12 col-md-6 formRegisterProduct d-flex flex-column flex-sm-row justify-items-center  px-4">
+        <div className="col-10 col-sm-6 me-4 ">
+          <label htmlFor="inputEmail4" className="form-label generalText fw-bold">
             Name
           </label>
-          <input type="text" placeholder="Product Name" class="form-control" id="inputEmail4" value={nameProduct} onChange={(e) => setNameProduct(e.target.value)} required />
+          <input type="text" placeholder="Product Name" className="form-control" id="inputEmail4" value={nameProduct} onChange={(e) => setNameProduct(e.target.value)} required />
         </div>
-        <div class="col-md-2 me-2">
-          <label for="inputPassword4" class="form-label generalText fw-bold">
+        <div className="col-2 mt-2 mt-sm-0">
+          <label for="inputPassword4" className="form-label generalText fw-bold">
             Stock
           </label>
-          <input type="number" placeholder="1" min="1" class="form-control" id="inputPassword4" value={qtdProductBuyed} onChange={(e) => setQtdProductBuyed(parseInt(e.target.value))} required />
+          <input type="number" placeholder="1" min="1" className="form-control" id="inputPassword4" value={qtdProductBuyed} onChange={(e) => setQtdProductBuyed(parseInt(e.target.value))} required />
         </div>
-
-        <div class="col-5 d-flex align-items-end  mt-2 mt-sm-2 mt-md-0">
-          <button type="submit" class="btn btn-primary btn-register me-2">
+        </div>
+        <div className="d-flex mt-3 px-4 col-10">
+          <button type="submit" className="btn btn-dark btn-register me-4">
             Adicionar
           </button>
        
-           <button type="submit" class="btn btn-primary btn-register  ms-2">
+           <button type="submit" className="btn btn-dark btn-register">
              comprar
           </button>
-       
-        
-        </div>
+          
+      </div>
+
+
       </form>
-       </div>
+</div>
+     
+
+
+
+   
+      
 
 
       {/*Lista de produtos disponiveis para compra*/}

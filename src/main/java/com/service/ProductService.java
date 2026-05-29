@@ -13,11 +13,11 @@ import jakarta.transaction.Transactional;
 @Service
 public class ProductService {
 
-    private final IntemProductService intemProductService;
+    private final ItemProductService intemProductService;
 
 	private final ProductRepository repositoryProduct;
 
-	public ProductService(ProductRepository repositoryProduct, IntemProductService intemProductService) {
+	public ProductService(ProductRepository repositoryProduct, ItemProductService intemProductService) {
 
 		this.repositoryProduct = repositoryProduct;
 

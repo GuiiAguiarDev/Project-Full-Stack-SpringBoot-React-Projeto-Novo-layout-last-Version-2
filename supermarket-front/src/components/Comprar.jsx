@@ -30,6 +30,11 @@ function Comprar({ onUpdate }) {
 
 
   const handleComprar = async (e) => {
+
+   
+  
+
+
     //Não deixa a oagina recarregar
     e.preventDefault();
     try {
@@ -38,7 +43,11 @@ function Comprar({ onUpdate }) {
           nameProduct,
           qtdProductBuyed,
         },
-      });
+
+        
+      }
+      
+    );
 
    
       setNameProduct("");
@@ -49,6 +58,9 @@ function Comprar({ onUpdate }) {
       alert("Failed buy");
       
     }
+    //Quando comprar atualizar novamente a tabela
+    loadProducts();
+    
   };
 
   return (
@@ -74,11 +86,9 @@ function Comprar({ onUpdate }) {
         </div>
         </div>
         <div className="d-flex mt-3 px-4 col-10">
-          <button type="submit" className="btn btn-dark btn-register me-4">
-            Adicionar
-          </button>
+          
        
-           <button type="submit" className="btn btn-dark btn-register">
+           <button type="submit" className="btn btn-dark btn-register" onClick={handleComprar}>
              comprar
           </button>
           
@@ -112,6 +122,7 @@ function Comprar({ onUpdate }) {
       <th scope="col">Produto</th>
     
       <th scope="col">Valor</th>
+      <th>Stoke</th>
     </tr>
   </thead>
   <tbody className="table-group-divider">
@@ -126,6 +137,7 @@ function Comprar({ onUpdate }) {
         
 })}
 </td>
+<td>{p.estoque}</td>
     </tr>
        ))}
   </tbody>
